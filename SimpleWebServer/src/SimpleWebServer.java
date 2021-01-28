@@ -14,7 +14,9 @@ package com.learnsecurity;
 
 import java.io.*;                                         
 import java.net.*;                                        
-import java.util.*;                                       
+import java.util.*;  
+import java.nio.charset.StandardCharsets;
+
  
 public class SimpleWebServer {                            
  
@@ -23,7 +25,7 @@ public class SimpleWebServer {
  
     /* The socket used to process incoming connections
        from web clients */
-    private static ServerSocket dServerSocket;            
+    private ServerSocket dServerSocket;            
    
     public SimpleWebServer () throws Exception {          
  	dServerSocket = new ServerSocket (PORT);          
@@ -35,8 +37,10 @@ public class SimpleWebServer {
  	    Socket s = dServerSocket.accept();           
  
  	    /* then process the client's request */
- 	    processRequest(s);                           
- 	}                                                
+ 	    processRequest(s); 
+ 	    s.close();
+ 	}  
+	
     }                                                    
  
     /* Reads the HTTP request from the client, and
@@ -44,28 +48,38 @@ public class SimpleWebServer {
        a HTTP error code. */
     public void processRequest(Socket s) throws Exception { 
  	/* used to read data from the client */ 
- 	BufferedReader br =                                 
+ 	
+    	try{
+    	BufferedReader br =                                 
  	    new BufferedReader (
-				new InputStreamReader (s.getInputStream())); 
+				new InputStreamReader (s.getInputStream(),StandardCharsets.UTF_8)); 
  
  	/* used to write data to the client */
  	OutputStreamWriter osw =                            
- 	    new OutputStreamWriter (s.getOutputStream());  
+ 	    new OutputStreamWriter (s.getOutputStream(),StandardCharsets.UTF_8);  
      
  	/* read the HTTP request from the client */
  	String request = br.readLine();                    
- 
+	br.close();
  	String command = null;                             
  	String pathname = null;                            
      
- 	/* parse the HTTP request */
+	 /* parse the HTTP request */
+	 if(request!=null) {
  	StringTokenizer st = 
 	    new StringTokenizer (request, " ");               
  
  	command = st.nextToken();                       
- 	pathname = st.nextToken();                      
+	 pathname = st.nextToken();  } 
+	 
+	 else{
+		 br.close();
+		 osw.close();
+		 s.close();
+ 	    return; 
+	 }                    
  
-	if (command.equals("GET")) {                    
+	if ("GET".equals(command)) {                    
 	    /* if the request is a GET
 	       try to respond with the file
 	       the user is requesting */
@@ -76,11 +90,13 @@ public class SimpleWebServer {
 	       return an error saying this server
 	       does not implement the requested command */
 	    osw.write ("HTTP/1.0 501 Not Implemented\n\n");
- 	}                                               
- 	
+ 	}    }catch(Exeption e){return;}                                           
+ 	finally{
  	/* close the connection to the client */
- 	osw.close();                                    
-    }                                                   
+	 osw.close();
+	 br.close();
+	 s.close();                                  
+    } }                                                  
  
     public void serveFile (OutputStreamWriter osw,      
 			   String pathname) throws Exception {
@@ -90,25 +106,32 @@ public class SimpleWebServer {
        
  	/* remove the initial slash at the beginning
  	   of the pathname in the request */
- 	if (pathname.charAt(0)=='/')                        
- 	    pathname=pathname.substring(1);                 
+ 	if (pathname.charAt(0)=='/')  {                      
+ 	    pathname=pathname.substring(1);  }               
  	
  	/* if there was no filename specified by the
  	   client, serve the "index.html" file */
- 	if (pathname.equals(""))                            
- 	    pathname="index.html";                          
+ 	if ("".equals(pathname)) {                           
+ 	    pathname="index.html"; }                         
  
  	/* try to open file specified by pathname */
  	try {                                               
- 	    fr = new FileReader (pathname);                 
+ 	    fr = new FileReader (pathname,StandardCharsets.UTF_8);                 
  	    c = fr.read();                                  
- 	}                                                   
+ 	}   catch (RuntimeException e) {
+
+		throw e;
+	} 								
  	catch (Exception e) {                               
  	    /* if the file is not found,return the
  	       appropriate HTTP response code  */
- 	    osw.write ("HTTP/1.0 404 Not Found\n\n");         
+		 osw.write ("HTTP/1.0 404 Not Found\n\n");
+		 
  	    return;                                         
- 	}                                                   
+ 	} 
+ 	finally {
+ 		if(fr!=null) { fr.close();}
+ 	}
  
  	/* if the requested file can be successfully opened
  	   and read, then return an OK response code and
@@ -120,7 +143,8 @@ public class SimpleWebServer {
  	 	System.out.println("It works../nc = "+c);
 
  	}                                                   
- 	osw.write (sb.toString());                                  
+	 osw.write (sb.toString());
+	 fr.close();                                  
     }                                                       
  
     /* This method is called when the program is run from

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.2.0" sequence="0" timestamp="1611685228616" analysisTimestamp="1611836550719" release="">
+  <Project projectName="-">
+    <Jar>/Users/tamimisu/Desktop/lab3/SimpleWebServer.class</Jar>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="com.learnsecurity.SimpleWebServer">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.SimpleWebServer" name="processRequest" signature="(Ljava/net/Socket;)V" isStatic="false">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" start="47" end="83" startBytecode="0" endBytecode="220" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="75" startBytecode="0" endBytecode="85" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="49" end="49" startBytecode="12" endBytecode="12" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="com.learnsecurity.SimpleWebServer">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.SimpleWebServer" name="processRequest" signature="(Ljava/net/Socket;)V" isStatic="false">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" start="47" end="83" startBytecode="0" endBytecode="220" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Method>
+    <Method classname="java.io.OutputStreamWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.OutputStreamWriter" start="108" end="111" startBytecode="0" endBytecode="85" sourcefile="OutputStreamWriter.java" sourcepath="java/io/OutputStreamWriter.java"/>
+    </Method>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="53" end="53" startBytecode="27" endBytecode="27" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="com.learnsecurity.SimpleWebServer">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.SimpleWebServer" name="serveFile" signature="(Ljava/io/OutputStreamWriter;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" start="87" end="122" startBytecode="0" endBytecode="238" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="60" end="61" startBytecode="0" endBytecode="68" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="103" end="103" startBytecode="47" endBytecode="47" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+  </BugInstance>
+  <BugInstance type="NP_DEREFERENCE_OF_READLINE_VALUE" priority="2" rank="15" abbrev="NP" category="STYLE">
+    <Class classname="com.learnsecurity.SimpleWebServer">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.SimpleWebServer" name="processRequest" signature="(Ljava/net/Socket;)V" isStatic="false">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" start="47" end="83" startBytecode="0" endBytecode="220" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Method>
+    <LocalVariable name="?" register="4" pc="49" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="62" end="62" startBytecode="51" endBytecode="51" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="com.learnsecurity.SimpleWebServer">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.SimpleWebServer" name="serveFile" signature="(Ljava/io/OutputStreamWriter;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" start="87" end="122" startBytecode="0" endBytecode="238" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Method>
+    <Class classname="java.io.Reader" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.Reader" sourcefile="Reader.java" sourcepath="java/io/Reader.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="103" end="103" startBytecode="47" endBytecode="47" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="104" end="104" startBytecode="51" endBytecode="51" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="111" end="111" startBytecode="57" endBytecode="57" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="116" end="116" startBytecode="69" endBytecode="69" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="117" end="117" startBytecode="75" endBytecode="75" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="121" end="121" startBytecode="99" endBytecode="99" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="122" end="122" startBytecode="108" endBytecode="108" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Reader x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE">
+    <Class classname="com.learnsecurity.SimpleWebServer">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.SimpleWebServer" name="serveFile" signature="(Ljava/io/OutputStreamWriter;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" start="87" end="122" startBytecode="0" endBytecode="56" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/Reader;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.Reader" start="81" end="388" sourcefile="Reader.java" sourcepath="java/io/Reader.java"/>
+    </Type>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="103" end="103" startBytecode="42" endBytecode="42" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="3" rank="20" abbrev="REC" category="STYLE">
+    <Class classname="com.learnsecurity.SimpleWebServer">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.SimpleWebServer" name="serveFile" signature="(Ljava/io/OutputStreamWriter;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" start="87" end="122" startBytecode="0" endBytecode="238" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Method>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="106" end="106" startBytecode="60" endBytecode="60" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE">
+    <Class classname="com.learnsecurity.SimpleWebServer">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.SimpleWebServer" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" start="28" end="30" startBytecode="0" endBytecode="49" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Method>
+    <Field classname="com.learnsecurity.SimpleWebServer" name="dServerSocket" signature="Ljava/net/ServerSocket;" isStatic="true">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Field>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="29" end="29" startBytecode="14" endBytecode="14" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 26 Jan 2021 21:20:28 +0300" total_classes="1" referenced_classes="25" total_bugs="8" total_size="51" num_packages="1" java_version="15.0.1" vm_version="15.0.1+9" cpu_seconds="32.18" clock_seconds="238.90" peak_mbytes="185.11" alloc_mbytes="768.00" gc_seconds="0.11" priority_3="1" priority_2="3" priority_1="4">
+    <PackageStats package="com.learnsecurity" total_bugs="8" total_types="1" total_size="51" priority_3="1" priority_2="3" priority_1="4">
+      <ClassStats class="com.learnsecurity.SimpleWebServer" sourceFile="SimpleWebServer.java" interface="false" size="51" bugs="8" priority_3="1" priority_2="3" priority_1="4"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="737" invocations="2" avgMicrosecondsPerInvocation="368754" maxMicrosecondsPerInvocation="401425" standardDeviationMicrosecondsPerInvocation="32676"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="486" invocations="386" avgMicrosecondsPerInvocation="1260" maxMicrosecondsPerInvocation="35092" standardDeviationMicrosecondsPerInvocation="2812"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="199" invocations="388" avgMicrosecondsPerInvocation="514" maxMicrosecondsPerInvocation="12459" standardDeviationMicrosecondsPerInvocation="1054"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="89" invocations="25" avgMicrosecondsPerInvocation="3583" maxMicrosecondsPerInvocation="24724" standardDeviationMicrosecondsPerInvocation="5635"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="65" invocations="25" avgMicrosecondsPerInvocation="2638" maxMicrosecondsPerInvocation="15930" standardDeviationMicrosecondsPerInvocation="3619"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="62" invocations="45" avgMicrosecondsPerInvocation="1388" maxMicrosecondsPerInvocation="28285" standardDeviationMicrosecondsPerInvocation="4286"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="58" invocations="81" avgMicrosecondsPerInvocation="727" maxMicrosecondsPerInvocation="7884" standardDeviationMicrosecondsPerInvocation="1147"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="54" invocations="352" avgMicrosecondsPerInvocation="155" maxMicrosecondsPerInvocation="8252" standardDeviationMicrosecondsPerInvocation="482"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="52" invocations="5" avgMicrosecondsPerInvocation="10438" maxMicrosecondsPerInvocation="49922" standardDeviationMicrosecondsPerInvocation="19743"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
