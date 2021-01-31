@@ -1,0 +1,128 @@
+src/com/learnsecurity/SimpleWebServer.java:1:	CommentSize:	CommentSize: Comment is too large: Too many lines
+src/com/learnsecurity/SimpleWebServer.java:1:	CommentSize:	CommentSize: Comment is too large: Too many lines
+src/com/learnsecurity/SimpleWebServer.java:19:	CommentRequired:	CommentRequired: Class comments are required
+src/com/learnsecurity/SimpleWebServer.java:19:	CommentRequired:	CommentRequired: Class comments are required
+src/com/learnsecurity/SimpleWebServer.java:22:	CommentRequired:	CommentRequired: Field comments are required
+src/com/learnsecurity/SimpleWebServer.java:22:	CommentRequired:	CommentRequired: Field comments are required
+src/com/learnsecurity/SimpleWebServer.java:26:	CommentRequired:	CommentRequired: Field comments are required
+src/com/learnsecurity/SimpleWebServer.java:26:	CommentRequired:	CommentRequired: Field comments are required
+src/com/learnsecurity/SimpleWebServer.java:28:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/com/learnsecurity/SimpleWebServer.java:28:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/com/learnsecurity/SimpleWebServer.java:28:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/com/learnsecurity/SimpleWebServer.java:28:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/com/learnsecurity/SimpleWebServer.java:29:	AssignmentToNonFinalStatic:	AssignmentToNonFinalStatic: Possible unsafe assignment to a non-final static field in a constructor.
+src/com/learnsecurity/SimpleWebServer.java:29:	AssignmentToNonFinalStatic:	AssignmentToNonFinalStatic: Possible unsafe assignment to a non-final static field in a constructor.
+src/com/learnsecurity/SimpleWebServer.java:32:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/com/learnsecurity/SimpleWebServer.java:32:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/com/learnsecurity/SimpleWebServer.java:32:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/com/learnsecurity/SimpleWebServer.java:32:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/com/learnsecurity/SimpleWebServer.java:35:	CloseResource:	CloseResource: Ensure that resources like this Socket object are closed after use
+src/com/learnsecurity/SimpleWebServer.java:35:	CloseResource:	CloseResource: Ensure that resources like this Socket object are closed after use
+src/com/learnsecurity/SimpleWebServer.java:35:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 's' could be declared final
+src/com/learnsecurity/SimpleWebServer.java:35:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 's' could be declared final
+src/com/learnsecurity/SimpleWebServer.java:35:	ShortVariable:	ShortVariable: Avoid variables with short names like s
+src/com/learnsecurity/SimpleWebServer.java:35:	ShortVariable:	ShortVariable: Avoid variables with short names like s
+src/com/learnsecurity/SimpleWebServer.java:45:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/com/learnsecurity/SimpleWebServer.java:45:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/com/learnsecurity/SimpleWebServer.java:45:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 's' is not assigned and could be declared final
+src/com/learnsecurity/SimpleWebServer.java:45:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 's' is not assigned and could be declared final
+src/com/learnsecurity/SimpleWebServer.java:45:	ShortVariable:	ShortVariable: Avoid variables with short names like s
+src/com/learnsecurity/SimpleWebServer.java:45:	ShortVariable:	ShortVariable: Avoid variables with short names like s
+src/com/learnsecurity/SimpleWebServer.java:45:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/com/learnsecurity/SimpleWebServer.java:45:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/com/learnsecurity/SimpleWebServer.java:47:	CloseResource:	CloseResource: Ensure that resources like this InputStreamReader object are closed after use
+src/com/learnsecurity/SimpleWebServer.java:47:	CloseResource:	CloseResource: Ensure that resources like this InputStreamReader object are closed after use
+src/com/learnsecurity/SimpleWebServer.java:47:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'br' could be declared final
+src/com/learnsecurity/SimpleWebServer.java:47:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'br' could be declared final
+src/com/learnsecurity/SimpleWebServer.java:47:	ShortVariable:	ShortVariable: Avoid variables with short names like br
+src/com/learnsecurity/SimpleWebServer.java:47:	ShortVariable:	ShortVariable: Avoid variables with short names like br
+src/com/learnsecurity/SimpleWebServer.java:52:	CloseResource:	CloseResource: Ensure that resources like this OutputStreamWriter object are closed after use
+src/com/learnsecurity/SimpleWebServer.java:52:	CloseResource:	CloseResource: Ensure that resources like this OutputStreamWriter object are closed after use
+src/com/learnsecurity/SimpleWebServer.java:52:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'osw' could be declared final
+src/com/learnsecurity/SimpleWebServer.java:52:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'osw' could be declared final
+src/com/learnsecurity/SimpleWebServer.java:56:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'request' could be declared final
+src/com/learnsecurity/SimpleWebServer.java:56:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'request' could be declared final
+src/com/learnsecurity/SimpleWebServer.java:58:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'command' (lines '58'-'65').
+src/com/learnsecurity/SimpleWebServer.java:58:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'command' (lines '58'-'65').
+src/com/learnsecurity/SimpleWebServer.java:58:	UnusedAssignment:	UnusedAssignment: The initializer for variable 'command' is never used (overwritten on line 65)
+src/com/learnsecurity/SimpleWebServer.java:58:	UnusedAssignment:	UnusedAssignment: The initializer for variable 'command' is never used (overwritten on line 65)
+src/com/learnsecurity/SimpleWebServer.java:59:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'pathname' (lines '59'-'66').
+src/com/learnsecurity/SimpleWebServer.java:59:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'pathname' (lines '59'-'66').
+src/com/learnsecurity/SimpleWebServer.java:59:	UnusedAssignment:	UnusedAssignment: The initializer for variable 'pathname' is never used (overwritten on line 66)
+src/com/learnsecurity/SimpleWebServer.java:59:	UnusedAssignment:	UnusedAssignment: The initializer for variable 'pathname' is never used (overwritten on line 66)
+src/com/learnsecurity/SimpleWebServer.java:62:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'st' could be declared final
+src/com/learnsecurity/SimpleWebServer.java:62:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'st' could be declared final
+src/com/learnsecurity/SimpleWebServer.java:62:	ShortVariable:	ShortVariable: Avoid variables with short names like st
+src/com/learnsecurity/SimpleWebServer.java:62:	ShortVariable:	ShortVariable: Avoid variables with short names like st
+src/com/learnsecurity/SimpleWebServer.java:66:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'pathname' (lines '66'-'83').
+src/com/learnsecurity/SimpleWebServer.java:66:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'pathname' (lines '66'-'83').
+src/com/learnsecurity/SimpleWebServer.java:68:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/com/learnsecurity/SimpleWebServer.java:68:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/com/learnsecurity/SimpleWebServer.java:68:	LiteralsFirstInComparisons:	LiteralsFirstInComparisons: Position literals first in String comparisons
+src/com/learnsecurity/SimpleWebServer.java:68:	LiteralsFirstInComparisons:	LiteralsFirstInComparisons: Position literals first in String comparisons
+src/com/learnsecurity/SimpleWebServer.java:68:	PositionLiteralsFirstInComparisons:	PositionLiteralsFirstInComparisons: Position literals first in String comparisons
+src/com/learnsecurity/SimpleWebServer.java:68:	PositionLiteralsFirstInComparisons:	PositionLiteralsFirstInComparisons: Position literals first in String comparisons
+src/com/learnsecurity/SimpleWebServer.java:85:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/com/learnsecurity/SimpleWebServer.java:85:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/com/learnsecurity/SimpleWebServer.java:85:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'osw' is not assigned and could be declared final
+src/com/learnsecurity/SimpleWebServer.java:85:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'osw' is not assigned and could be declared final
+src/com/learnsecurity/SimpleWebServer.java:86:	AvoidReassigningParameters:	AvoidReassigningParameters: Avoid reassigning parameters such as 'pathname'
+src/com/learnsecurity/SimpleWebServer.java:86:	AvoidReassigningParameters:	AvoidReassigningParameters: Avoid reassigning parameters such as 'pathname'
+src/com/learnsecurity/SimpleWebServer.java:86:	AvoidReassigningParameters:	AvoidReassigningParameters: Avoid reassigning parameters such as 'pathname'
+src/com/learnsecurity/SimpleWebServer.java:86:	AvoidReassigningParameters:	AvoidReassigningParameters: Avoid reassigning parameters such as 'pathname'
+src/com/learnsecurity/SimpleWebServer.java:86:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/com/learnsecurity/SimpleWebServer.java:86:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/com/learnsecurity/SimpleWebServer.java:87:	CloseResource:	CloseResource: Ensure that resources like this FileReader object are closed after use
+src/com/learnsecurity/SimpleWebServer.java:87:	CloseResource:	CloseResource: Ensure that resources like this FileReader object are closed after use
+src/com/learnsecurity/SimpleWebServer.java:87:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'fr' (lines '87'-'103').
+src/com/learnsecurity/SimpleWebServer.java:87:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'fr' (lines '87'-'103').
+src/com/learnsecurity/SimpleWebServer.java:87:	ShortVariable:	ShortVariable: Avoid variables with short names like fr
+src/com/learnsecurity/SimpleWebServer.java:87:	ShortVariable:	ShortVariable: Avoid variables with short names like fr
+src/com/learnsecurity/SimpleWebServer.java:87:	UnusedAssignment:	UnusedAssignment: The initializer for variable 'fr' is never used (overwritten on line 103)
+src/com/learnsecurity/SimpleWebServer.java:87:	UnusedAssignment:	UnusedAssignment: The initializer for variable 'fr' is never used (overwritten on line 103)
+src/com/learnsecurity/SimpleWebServer.java:88:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'c' (lines '88'-'104').
+src/com/learnsecurity/SimpleWebServer.java:88:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'c' (lines '88'-'104').
+src/com/learnsecurity/SimpleWebServer.java:88:	ShortVariable:	ShortVariable: Avoid variables with short names like c
+src/com/learnsecurity/SimpleWebServer.java:88:	ShortVariable:	ShortVariable: Avoid variables with short names like c
+src/com/learnsecurity/SimpleWebServer.java:88:	UnusedAssignment:	UnusedAssignment: The initializer for variable 'c' is never used (overwritten on line 104)
+src/com/learnsecurity/SimpleWebServer.java:88:	UnusedAssignment:	UnusedAssignment: The initializer for variable 'c' is never used (overwritten on line 104)
+src/com/learnsecurity/SimpleWebServer.java:89:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'sb' (lines '89'-'122').
+src/com/learnsecurity/SimpleWebServer.java:89:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'sb' (lines '89'-'122').
+src/com/learnsecurity/SimpleWebServer.java:89:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'sb' could be declared final
+src/com/learnsecurity/SimpleWebServer.java:89:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'sb' could be declared final
+src/com/learnsecurity/SimpleWebServer.java:89:	PrematureDeclaration:	PrematureDeclaration: Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/learnsecurity/SimpleWebServer.java:89:	PrematureDeclaration:	PrematureDeclaration: Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/learnsecurity/SimpleWebServer.java:89:	ShortVariable:	ShortVariable: Avoid variables with short names like sb
+src/com/learnsecurity/SimpleWebServer.java:89:	ShortVariable:	ShortVariable: Avoid variables with short names like sb
+src/com/learnsecurity/SimpleWebServer.java:93:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/com/learnsecurity/SimpleWebServer.java:93:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/com/learnsecurity/SimpleWebServer.java:93:	IfStmtsMustUseBraces:	IfStmtsMustUseBraces: Avoid using if statements without curly braces
+src/com/learnsecurity/SimpleWebServer.java:93:	IfStmtsMustUseBraces:	IfStmtsMustUseBraces: Avoid using if statements without curly braces
+src/com/learnsecurity/SimpleWebServer.java:94:	ControlStatementBraces:	ControlStatementBraces: This statement should have braces
+src/com/learnsecurity/SimpleWebServer.java:94:	ControlStatementBraces:	ControlStatementBraces: This statement should have braces
+src/com/learnsecurity/SimpleWebServer.java:94:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/com/learnsecurity/SimpleWebServer.java:94:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/com/learnsecurity/SimpleWebServer.java:98:	IfStmtsMustUseBraces:	IfStmtsMustUseBraces: Avoid using if statements without curly braces
+src/com/learnsecurity/SimpleWebServer.java:98:	IfStmtsMustUseBraces:	IfStmtsMustUseBraces: Avoid using if statements without curly braces
+src/com/learnsecurity/SimpleWebServer.java:98:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/com/learnsecurity/SimpleWebServer.java:98:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/com/learnsecurity/SimpleWebServer.java:98:	LiteralsFirstInComparisons:	LiteralsFirstInComparisons: Position literals first in String comparisons
+src/com/learnsecurity/SimpleWebServer.java:98:	LiteralsFirstInComparisons:	LiteralsFirstInComparisons: Position literals first in String comparisons
+src/com/learnsecurity/SimpleWebServer.java:98:	PositionLiteralsFirstInComparisons:	PositionLiteralsFirstInComparisons: Position literals first in String comparisons
+src/com/learnsecurity/SimpleWebServer.java:98:	PositionLiteralsFirstInComparisons:	PositionLiteralsFirstInComparisons: Position literals first in String comparisons
+src/com/learnsecurity/SimpleWebServer.java:99:	ControlStatementBraces:	ControlStatementBraces: This statement should have braces
+src/com/learnsecurity/SimpleWebServer.java:99:	ControlStatementBraces:	ControlStatementBraces: This statement should have braces
+src/com/learnsecurity/SimpleWebServer.java:103:	AvoidFileStream:	AvoidFileStream: Avoid instantiating FileInputStream, FileOutputStream, FileReader, or FileWriter
+src/com/learnsecurity/SimpleWebServer.java:103:	AvoidFileStream:	AvoidFileStream: Avoid instantiating FileInputStream, FileOutputStream, FileReader, or FileWriter
+src/com/learnsecurity/SimpleWebServer.java:104:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'c' (lines '104'-'122').
+src/com/learnsecurity/SimpleWebServer.java:104:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'c' (lines '104'-'122').
+src/com/learnsecurity/SimpleWebServer.java:106:	AvoidCatchingGenericException:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/com/learnsecurity/SimpleWebServer.java:106:	AvoidCatchingGenericException:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/com/learnsecurity/SimpleWebServer.java:126:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/com/learnsecurity/SimpleWebServer.java:126:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/com/learnsecurity/SimpleWebServer.java:126:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'argv' is not assigned and could be declared final
+src/com/learnsecurity/SimpleWebServer.java:126:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'argv' is not assigned and could be declared final
+src/com/learnsecurity/SimpleWebServer.java:126:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/com/learnsecurity/SimpleWebServer.java:126:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/com/learnsecurity/SimpleWebServer.java:129:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'sws' could be declared final
+src/com/learnsecurity/SimpleWebServer.java:129:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'sws' could be declared final

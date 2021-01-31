@@ -10,14 +10,16 @@
  
 ***********************************************************************/
  
-package com.learnsecurity; 
+//package com.learnsecurity; 
 
 import java.io.*;                                         
 import java.net.*;                                        
-import java.util.*;  
-import java.nio.charset.StandardCharsets;
+import java.util.*;
 
- 
+import javax.net.ssl.SSLServerSocketFactory;
+
+import java.nio.charset.StandardCharsets;
+import java.io.IOException;
 public class SimpleWebServer {                            
  
     /* Run the HTTP server on this TCP port. */           
@@ -28,8 +30,8 @@ public class SimpleWebServer {
     private ServerSocket dServerSocket;            
    
     public SimpleWebServer () throws Exception {          
- 	dServerSocket = new ServerSocket (PORT);          
-    }                                                     
+     	dServerSocket = SSLServerSocketFactory.getDefault().createServerSocket(PORT);          
+        }                                                     
  
     public void run() throws Exception {                 
 	while (true) {                                   
@@ -49,7 +51,7 @@ public class SimpleWebServer {
     public void processRequest(Socket s) throws Exception { 
  	/* used to read data from the client */ 
  	
-    	try{
+    	
     	BufferedReader br =                                 
  	    new BufferedReader (
 				new InputStreamReader (s.getInputStream(),StandardCharsets.UTF_8)); 
@@ -90,13 +92,13 @@ public class SimpleWebServer {
 	       return an error saying this server
 	       does not implement the requested command */
 	    osw.write ("HTTP/1.0 501 Not Implemented\n\n");
- 	}    }catch(Exeption e){return;}                                           
- 	finally{
+ 	}                                               
+ 	
  	/* close the connection to the client */
 	 osw.close();
 	 br.close();
 	 s.close();                                  
-    } }                                                  
+    }                                                   
  
     public void serveFile (OutputStreamWriter osw,      
 			   String pathname) throws Exception {
@@ -116,7 +118,7 @@ public class SimpleWebServer {
  
  	/* try to open file specified by pathname */
  	try {                                               
- 	    fr = new FileReader (pathname,StandardCharsets.UTF_8);                 
+ 	    fr = new FileReader (pathname,StandardCharsets.UTF_8);   
  	    c = fr.read();                                  
  	}   catch (RuntimeException e) {
 

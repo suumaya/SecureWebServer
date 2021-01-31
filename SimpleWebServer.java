@@ -26,7 +26,7 @@ public class SimpleWebServer {
     private static ServerSocket dServerSocket;            
    
     public SimpleWebServer () throws Exception {          
- 	dServerSocket = new ServerSocket (PORT);          
+ 	dServerSocket = SSLServerSocketFactory.getDefault().createServerSocket(PORT);          
     }                                                     
  
     public void run() throws Exception {                 
@@ -100,7 +100,7 @@ public class SimpleWebServer {
  
  	/* try to open file specified by pathname */
  	try {                                               
- 	    fr = new FileReader (pathname);                 
+ 	    fr = new FileReader (FilenameUtils.getName(pathname));                 
  	    c = fr.read();                                  
  	}                                                   
  	catch (Exception e) {                               
